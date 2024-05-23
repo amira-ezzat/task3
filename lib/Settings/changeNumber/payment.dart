@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:task_3/router/constant_go_router.dart';
 
 class PaymentHistory extends StatelessWidget {
 
@@ -18,9 +20,7 @@ class PaymentHistory extends StatelessWidget {
         ),
         leading: IconButton(
           onPressed: () {
-            // Navigator.push(
-            //   context,MaterialPageRoute(builder: (context) => Settings()),
-            // );
+            context.pop(paymentHistory);
           },
           icon: Icon(Icons.arrow_back_ios),
         ),

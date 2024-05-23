@@ -1,25 +1,25 @@
+
 import 'package:flutter/material.dart';
-import 'package:task_3/Settings/changeNumber/change.dart';
-import 'package:task_3/Settings/changeNumber/otp.dart';
-import 'package:task_3/Settings/changeNumber/payment.dart';
+import 'package:sizer/sizer.dart';
+import 'package:task_3/router/go_router_app.dart';
 
-import 'setting.dart';
-
-void main() {
-  runApp(const MyApp());
+void main() async {
+  runApp(const Application());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Application extends StatelessWidget {
+  const Application({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-debugShowCheckedModeBanner: false,
-      home:Settings(),
+    return Sizer(
+      builder: (BuildContext context, Orientation orientation,
+          DeviceType deviceType) {
+        return MaterialApp.router(
+          debugShowCheckedModeBanner: false,
+          routerConfig: goRouter(),
+        );
+      },
     );
   }
 }
-
-

@@ -38,6 +38,8 @@ dependencies:
   sqflite: ^2.0.3
   intl: ^0.18.0
   hexcolor: ^3.0.1
+  sizer: ^2.0.15
+  go_router: ^14.1.2
 
 dev_dependencies:
   flutter_test:
@@ -63,10 +65,13 @@ flutter:
   assets:
     - assets/image/
   fonts:
-
     - family: font1
       fonts:
         - asset: assets/fonts/uu.ttf
+    - family: Urbanist
+      fonts:
+        - asset: assets\fonts\Urbanist-Italic-VariableFont_wght.ttf
+        - asset: assets/fonts/Urbanist-VariableFont_wght.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:

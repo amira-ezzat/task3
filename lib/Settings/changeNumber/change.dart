@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import '../../setting.dart';
+import 'setting.dart';
 import 'otp.dart';
 
 class ChangeNumber extends StatelessWidget {

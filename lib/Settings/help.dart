@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:task_3/setting.dart';
+import 'package:task_3/Settings/changeNumber/setting.dart';
 
 class Help extends StatelessWidget {
   var messageController = TextEditingController();

@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:task_3/Settings/changeNumber/changeSuccess.dart';
-import '../../setting.dart';
+import 'setting.dart';
 import 'otp.dart';
 
 class ChangeNumberVerfid extends StatelessWidget {

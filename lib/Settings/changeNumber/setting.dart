@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:task_3/Settings/about.dart';
 import 'package:task_3/Settings/changeNumber/change.dart';
 import 'package:task_3/Settings/help.dart';
+import 'package:task_3/router/constant_go_router.dart';
 
 class Settings extends StatefulWidget {
 
@@ -27,9 +29,14 @@ class _SettingsState extends State<Settings> {
             fontFamily: 'font1'
           ),
         ),
-        leading: Icon(Icons.arrow_back_ios,//color: HexColor(' #3E3E3E')
+        leading: IconButton(
+          onPressed: () {
+            context.pop(settings);
+          }, icon: Icon(Icons.arrow_back_ios),
+
+        ),
      ),
-      ),
+
       body: Container(
         color: HexColor('F5F5F5'),
         width: double.infinity,

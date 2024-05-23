@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:task_3/setting.dart';
+import 'package:task_3/Settings/changeNumber/setting.dart';
 
 class About extends StatelessWidget {
   
